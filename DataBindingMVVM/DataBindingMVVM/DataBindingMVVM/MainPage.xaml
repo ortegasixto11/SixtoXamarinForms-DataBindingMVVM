@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="DataBindingMVVM.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackLayout>
+
+        <Entry Text="{Binding MyMessage, Mode=TwoWay}" />
+        <Label Margin="10,10" Text="{Binding MyMessage}" />
+
+        <Label IsVisible="{Binding LabelResultVisible, Mode=OneWay}" Text="Soy una respuesta asíncrona" />
+
+    </StackLayout>
+
+</ContentPage>
